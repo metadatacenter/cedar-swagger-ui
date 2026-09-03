@@ -21,6 +21,9 @@
         url: "/swagger-api/swagger.json",
         dom_id: "#swagger-ui",
         deepLinking: true,
+        // Start with every tag section closed. The default, "list", opens all of them, and a
+        // twenty-tag API then buries its own outline under several screens of operations.
+        docExpansion: "none",
         presets: [SwaggerUIBundle.presets.apis],
         layout: "BaseLayout"
       });
